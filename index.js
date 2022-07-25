@@ -21,8 +21,8 @@ appDiv.innerHTML = `<h1>Slice and Splice</h1>`;
 function frankenSplice(arr1, arr2, n) {
   let newArr = arr2.slice();
   // console.log("Console: ", newArr);
-  for (let i = 0; i < arr1.length; i++) {
-    newArr.splice(n, 0, arr1[i]);
+  for (const arr of arr1) {
+    newArr.splice(n, 0, arr);
     // console.log('Console: ', newArr);
     n++;
     //   console.log(arr);
